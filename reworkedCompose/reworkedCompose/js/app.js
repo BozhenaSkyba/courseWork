@@ -33,15 +33,13 @@ $(function () {
   sliderAbout.slick({
     infinite: false,
     slidesToShow: 1,
-    // autoplay: true,
     slidesToScroll: 1,
+    autoplay: false,
     fade: true,
     dots: false,
     arrows: false,
     mobileFirst: true,
   });
-
-  //   Slider news
 
   const sliderNews = $("#news__slider");
 
@@ -56,32 +54,23 @@ $(function () {
   });
 
   const form = document.forms.contact;
-  console.log("form", form);
 
   function submitForm(e) {
     e.preventDefault();
     const userName = form.elements["Username"].value;
     const userEmail = form.elements["email"].value;
 
-    console.log(userName);
-    console.log(userEmail);
-
-    const formData = new FormData();
-    formData.append("user", userName);
-    formData.append("emai", userEmail);
-
-    const response = fetch(
-      "https://compose-design-app.herokuapp.com/contact",
-      {
-        method: "POST",
-        mode: "cors",
-        headers: {
-          "Content-Type": "application/json",
-          // 'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: JSON.stringify(formData), // body data type must match "Content-Type" header
-      }
-    )
+    fetch("https://compose-design-app.herokuapp.com/contact", {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        userEmail: userEmail,
+        userName: userName,
+      }),
+    })
       .then(() => {
         form.elements["Username"].value = null;
         form.elements["email"].value = null;
