@@ -1,0 +1,874 @@
+// Section main
+
+.main {
+    width: 100%;
+    height: 1150px;
+    text-align: center;
+    position: relative;
+}
+
+
+.header {
+    width: 100%;
+    height: 110px;
+    position: absolute;
+    top: 0;
+}
+
+
+.nav {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    position: fixed;
+    transition: .6s;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.nav.sticky {
+    height: 80px;
+    padding-top: 0px;
+    background-color: #7e5aff;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav__list {
+    width: 37.5%;
+    display: flex;
+    list-style-type: none;
+    margin-left: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav__item  {
+    color: #f3efef;
+    font-family: "Gotham";
+    font-weight: 400;
+}
+
+
+.nav__item:hover {
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+}
+
+
+.nav__item::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+
+.nav__item.active::before {
+    background: #fff;
+}
+
+
+.nav__social {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+
+.nav__facebook, .nav__twitter, .nav__instagram {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav__facebook:hover, .nav__twitter:hover, .nav__instagram:hover {
+    cursor: pointer;
+}
+
+
+.nav--icon--svg {
+    fill: #fff;
+    width: 20px;
+    height: 20px;
+}
+ 
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container.one {
+    background-image: url(../Images/bg-1.png);
+}
+
+.container.two {
+    background-image: url(../Images/bg-2.png);
+}
+
+.container.three {
+    background-image: url(../Images/bg-4.png);
+}
+
+.container.four {
+    background-image: url(../Images/bg-1.png);
+}
+
+.container.five {
+    background-image: url(../Images/bg-2.png);
+}
+
+.container.six {
+    background-image: url(../Images/bg-4.png);
+}
+
+.container.one.slick-slide.slick-current .slick-active {
+    width: 1093px;
+}
+
+
+.slick-initialized.slick-slider.slick-dotted .slick-dots {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 50%;
+    position: absolute;
+    right: 100px;
+    top: 350px;
+    z-index: 100;
+}
+
+
+.slick-dots {
+    max-width: 100px;
+}
+
+
+.slick-dots button {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0;
+    font-size: 0;
+}
+
+
+.slick-dots button:hover {
+    cursor: pointer;
+}
+
+
+.slick-dots .slick-active button {
+    background-color: #fff;
+    border: 0;
+}
+
+
+.slick-dots li {
+    margin-bottom: 15px;
+}
+
+
+.title {
+    font-size: 80px;
+    color: #fff;
+    margin-top: 350px;
+    font-family: "Gotham";
+    font-weight: bold;
+}
+
+
+.subtitle {
+    margin-top: 40px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-family: "Gotham";
+    font-weight: normal;
+}
+
+.arrow {
+    margin: 300px auto;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.arrow a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-down {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+}
+
+
+
+// Section project
+
+.section__projects {
+    width: 100%;
+    height: 1633px; 
+    position: relative;
+}
+
+
+.project__title {
+    font-size: 44px;
+    font-family: "Gotham";
+    font-weight: bold;
+    text-align: center;
+    padding-top: 140px;
+    color: #2c4058;
+}
+
+.project__title::before {
+    width: 100px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 100px;
+    right: 47%;
+}
+
+
+.projects__blockOne, .projects__blockTwo {
+    width: 100%;
+    height: 540px;
+    margin: 88px 0 140px 0;
+    position: relative;
+    display: flex;
+}
+
+.projects__blockOne--left, .projects__blockTwo--left {
+    width: 585px;
+}
+
+
+.projects__blockOne--square, .projects__blockTwo--square {
+    width: 100%;
+    height: 470px;
+}
+
+
+.projects__blockOne--square {
+    background-color: #55b7ff;
+}
+
+
+.projects__blockOne--img, .projects__blockTwo--img {
+    width: 585px;
+    height: 470px;
+    position: absolute;
+    top: 12.9%;
+}
+
+
+.projects__blockOne--img {
+    left: 13.4%;
+
+}
+
+
+.projects__blockOne--right, .projects__blockTwo--right {
+    width: 27.2%;
+    height: 360px;
+    margin-top: 125px;
+}
+
+
+.projects__blockOne--right {
+    margin-left: 22.6%;
+}
+
+
+.projects__blockOne--right--caption, .projects__blockTwo--right--caption {
+    font-size: 22px;
+    color: #2c4058;
+    font-family: "Gotham";
+    font-weight: normal;
+}
+
+.projects__blockOne--right--title, .projects__blockTwo--right--title {
+    font-size: 44px;
+    margin-top: 16px;
+    font-family: "Gotham";
+    font-weight: bold;
+    color: #2c4058;
+}
+
+
+.projects__blockOne--right--subtitle, .projects__blockTwo--right--subtitle {
+    font-size: 18px;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    color: #2c4058;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.project__btn {
+    width: 190px;
+    height: 50px;
+    margin-top: 35px;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 14px;
+    color: #2c4058;
+}
+
+
+.project__btn:hover {
+    background-color: #2c4058;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.projects__blockOne--right--address, .projects__blockTwo--right--address {
+    margin-top: 50px;
+    display: flex;
+    color: #2c4058;
+}
+
+
+.location {
+    width: 20px;
+    height: 23px;
+}
+
+
+.projects__blockOne--right--address--text, .projects__blockTwo--right--address--text {
+    margin-left: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.projects__blockTwo {
+    flex-direction: row-reverse;
+}
+
+
+.projects__blockTwo--square {
+    background-color: #7e5aff;
+}
+
+
+.projects__blockTwo--img {
+    right: 13.4%;
+}
+
+
+.projects__blockTwo--right {
+    margin-right: 22.6%;
+}
+
+
+// Section News
+
+.section__news {
+    overflow: hidden !important;
+    width: 100%;
+    height: 1035px;
+    background-image: url(../Images/bg-2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.news__title {
+    font-size: 44px;
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+    font-family: "Gotham";
+    font-weight: normal;
+}
+
+
+.news__title::before {
+    width: 100px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    top: 140px;
+    right: 47%;
+}
+
+
+.news__container {
+    width: 1170px;
+    height: 510px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__item {
+    width: 370px;
+    background-color: #fff;
+}
+
+
+.news__item--title {
+    padding: 30px 20px 20px 20px;
+    line-height: 35px;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Gotham";
+    font-weight: bold;
+    color: #2c4058;
+}
+
+
+.news__item--subtitle {
+    padding: 0 10px 20px 20px;
+    font-size: 18px;
+    opacity: .7;
+    color: #2c4058;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.news__itemOne--bottom {
+    display: flex;
+    padding-left: 20px;
+}
+
+
+.news__itemOne--author {
+    margin: auto 0 auto 20px;
+}
+
+
+.news__itemOne--author--name {
+    font-size: 18px;
+    font-family: "Gotham";
+    font-weight: normal;
+}
+
+
+.news__itemOne--author--date {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #55b7ff;
+    font-weight: bold;
+    font-family: "Gotham";
+}
+
+
+.news__itemOne {
+    width: 370px;
+    min-height: 500px;
+}
+
+
+.news__itemOne--img,.news__itemTwo--img, .news__itemThree--img  {
+    width: 365px;
+}
+
+
+.slick-slide {
+    margin-right: 25px;
+}
+
+
+div.slick-slide {
+    min-height: 500px;
+}
+
+
+.news__slider {
+    position: relative;
+}
+
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+}
+
+
+.slick-arrow:hover {
+    cursor: pointer;
+}
+
+
+.slick-arrow.slick-prev {
+    left: -80px;
+    background: url(../Images/arrow-left.png) 0 0 / 100% no-repeat;
+    border: none;
+}
+
+
+.slick-arrow.slick-next {
+    right: -80px;
+    background: url(../Images/arrow-right.png) 0 0 / 100% no-repeat;
+    border: none;
+}
+
+
+.news__container.slick-initialized.slick-slider.slick-dotted .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -300px;
+    left: 45%;
+}
+
+.news__container.slick-initialized.slick-slider.slick-dotted .slick-dots li {
+    margin-left: 25px;
+}
+
+
+// Section Gallery
+
+.section__gallery {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+}
+
+
+.gallery__title {
+    font-size: 44px;
+    text-align: center;
+    padding-top: 180px;
+    font-family: "Gotham";
+    font-weight: normal;
+    color: #2c4058;
+}
+
+
+.gallery__title::before {
+    width: 100px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 140px;
+    right: 47.5%;
+}
+
+
+.gallery__container {
+    width: 1180px;
+    height: 442px;
+    margin: 100px auto 0 auto;
+    display: flex;
+}
+
+
+.gallery--left--img {
+    height: 442px;
+}
+
+
+.gallery--right--img {
+    padding: 0 0 10px 10px;
+}
+
+
+.gallery__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+
+.gallery__btn {
+    width: 190px;
+    height: 50px;
+    margin-top: 35px;
+    background-color: #fff;
+    border: 1px solid black;
+    font-size: 14px;
+    font-family: "Gotham";
+    font-weight: normal;
+    color: #2c4058;
+}
+
+
+.gallery__btn:hover {
+    background-color: #2c4058;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.section__contacts {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contacts__map {
+    width: 100%;
+    height: 700px;
+    background-image: url(../Images/bg-5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contacts__form {
+    width: 770px;
+    height: 450px;
+    background-image: url(../Images/bg-3.png);
+    position: absolute;
+    top: 50%;
+}
+
+
+.contacts__title {
+    font-size: 44px;
+    text-align: center;
+    margin-top: 90px;
+    color: #2c4058;
+    font-family: "Gotham";
+    font-weight: normal;
+}
+
+
+.contacts__title::before {
+    width: 100px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    background-color: #2c4058;
+    top: 60px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+
+.contacts__info {
+    width: 100%;
+    height: 310px;
+    display: flex;
+    padding-top: 50px;
+}
+
+
+.contacts__info--left {
+    padding-left: 60px;
+    width: 50%;
+}
+
+
+.location,
+.telephone,
+.email,
+.clock {
+    fill: #7e5aff;
+    width: 18px;
+    height: 18px;
+}
+
+
+.contacts__info--left--location,
+.contacts__info--left--telephone,
+.contacts__info--left--email,
+.contacts__info--left--clock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #2c4058;
+}
+
+
+.contacts__info--location--text {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #2c4058;
+}
+
+
+.contacts__info--right {
+    width: 50%;
+}
+
+
+.form__input {
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    opacity: .5;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+
+.form__input:focus {
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    outline: none;
+    opacity: 1;
+}
+
+
+.form__buttun {
+    width: 80%;
+    text-align: end;
+}
+
+
+.form__btn {
+    width: 140px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #2c4058;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2c4058;
+    font-family: "Gotham";
+    font-weight: normal;
+}
+
+
+.form__btn:hover {
+    background-color: #2c4058;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.footer {
+    width: 100%;
+    height: 520px;
+    background-image: url(../Images/bg-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.footer__container {
+    width: 770px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer__logo {
+    margin: auto 0;
+    height: 40px;
+}
+
+
+.footer__nav-social {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.footer__nav-facebook, .footer__nav-twitter, .footer__nav-instagram {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer__nav-facebook:hover, .footer__nav-twitter:hover, .footer__nav-instagram:hover {
+    cursor: pointer;
+}
+
+
+.footer__text {
+    color: #fff;
+    margin-top: 40px;
+    font-size: 14px;
+     font-family: "Gotham";
+    font-weight: normal;
+}
+
+.footer__span {
+    border-left: 1px solid #fff;
+    margin: 0 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .nav__list {
+        display: none;
+    }
+    .projects__blockOne, .projects__blockTwo {
+        display: flex;
+        position: static;
+        flex-direction: column;
+    }
+}
+
